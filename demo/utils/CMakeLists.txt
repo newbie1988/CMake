@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+set(LIBRARY_OUTPUT_PATH ../libs)
+include_directories(../include)
+aux_source_directory(. SRCS_DIR)
+add_library(utils ${SRCS_DIR})
